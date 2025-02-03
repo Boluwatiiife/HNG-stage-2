@@ -58,10 +58,6 @@ function digitSum(n) {
   return digits.reduce((sum, digit) => sum + digit, 0);
 }
 
-app.get("/", (req, res) => {
-  res.send("Welcome to the Number Classifier API!");
-});
-
 app.get("/api/classify-number", async (req, res) => {
   const num_str = req.query.number;
 
